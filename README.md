@@ -1,8 +1,6 @@
 # 🌐 Secure & Compliant AWS Infrastructure with Terraform & Ansible
 
----
 
----
 
 ## 🧱 Architecture
 
@@ -101,4 +99,5 @@ GDPR Article References & Controls	Included in /compliance/gdpr/ with encryption
 NIS2 Incident Response Templates	Provided in /compliance/nis2/ with reporting and escalation plans
 
 
-
+ Final Thoughts
+“This project reflects my ability to design secure, automated cloud infrastructure that meets real-world compliance standards. I’m excited to bring this mindset to your team.”
