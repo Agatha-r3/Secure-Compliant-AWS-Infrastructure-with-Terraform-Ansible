@@ -1,0 +1,13 @@
+- name: Install Prometheus Node Exporter
+  hosts: web
+  become: yes
+  tasks:
+    - name: Download Node Exporter
+      get_url:
+        url: https://github.com/prometheus/node_exporter/releases/download/v1.5.0/node_exporter-1.5.0.linux-amd64.tar.gz
+        dest: /tmp/node_exporter.tar.gz
+
+    - name: Extract and run Node Exporter
+      shell: |
+        tar -xzf /tmp/node_exporter.tar.gz -C /opt/
+        nohup /opt/node_exporter-1.5.0.linux-amd64/node_exporter &
